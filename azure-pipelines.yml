@@ -39,7 +39,7 @@ steps:
   displayName: 'Run services'
   inputs:
     containerregistrytype: 'Azure Container Registry'
-    azureSubscription: '<<service connection details>>'
+    azureSubscription: 'Azure-Cloud-Link'
     azureContainerRegistry: '{"loginServer":"registryName.azurecr.io", "id" : "/subscriptions/xxxx/resourceGroups/day11-demo-rg/providers/Microsoft.ContainerRegistry/registries/registryName"}'
     dockerComposeFile: 'docker-compose.ci.build.yml'
     action: 'Run services'
@@ -49,7 +49,7 @@ steps:
   displayName: 'Build services'
   inputs:
     containerregistrytype: 'Azure Container Registry'
-    azureSubscription: '<<service connection details>>'
+    azureSubscription: 'Azure-Cloud-Link'
     azureContainerRegistry: '{"loginServer":"registryName.azurecr.io", "id" : "/subscriptions/xxxx/resourceGroups/day11-demo-rg/providers/Microsoft.ContainerRegistry/registries/registryName"}'
     dockerComposeFile: 'docker-compose.yml'
     dockerComposeFileArgs: 'DOCKER_BUILD_SOURCE='
@@ -60,7 +60,7 @@ steps:
   displayName: 'Push services'
   inputs:
     containerregistrytype: 'Azure Container Registry'
-    azureSubscription: '<<service connection details>>'
+    azureSubscription: 'Azure-Cloud-Link'
     azureContainerRegistry: '{"loginServer":"registryName.azurecr.io", "id" : "/subscriptions/xxxx/resourceGroups/day11-demo-rg/providers/Microsoft.ContainerRegistry/registries/registryName"}'
     dockerComposeFile: 'docker-compose.yml'
     dockerComposeFileArgs: 'DOCKER_BUILD_SOURCE='
@@ -71,7 +71,7 @@ steps:
   displayName: 'Lock services'
   inputs:
     containerregistrytype: 'Azure Container Registry'
-    azureSubscription: '<<service connection details>>'
+    azureSubscription: 'Azure-Cloud-Link'
     azureContainerRegistry: '{"loginServer":"registryName.azurecr.io", "id" : "/subscriptions/xxxx/resourceGroups/day11-demo-rg/providers/Microsoft.ContainerRegistry/registries/registryName"}'
     dockerComposeFile: 'docker-compose.yml'
     dockerComposeFileArgs: 'DOCKER_BUILD_SOURCE='
