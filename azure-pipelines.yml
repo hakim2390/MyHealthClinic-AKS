@@ -40,7 +40,7 @@ steps:
   inputs:
     containerregistrytype: 'Azure Container Registry'
     azureSubscription: 'Azure-Cloud-Link'
-    azureContainerRegistry: '{"loginServer":"registryName.azurecr.io", "id" : "/subscriptions/xxxx/resourceGroups/day11-demo-rg/providers/Microsoft.ContainerRegistry/registries/registryName"}'
+    azureContainerRegistry: '{"loginServer":"demo11acr1907.azurecr.io", "id" : "/subscriptions/e205edf9-df4c-4aad-83c0-3bc0f2d466c7/resourceGroups/demo11-rg2/providers/Microsoft.ContainerRegistry/registries/demo11acr1907"}'
     dockerComposeFile: 'docker-compose.ci.build.yml'
     action: 'Run services'
     detached: false
@@ -50,7 +50,7 @@ steps:
   inputs:
     containerregistrytype: 'Azure Container Registry'
     azureSubscription: 'Azure-Cloud-Link'
-    azureContainerRegistry: '{"loginServer":"registryName.azurecr.io", "id" : "/subscriptions/xxxx/resourceGroups/day11-demo-rg/providers/Microsoft.ContainerRegistry/registries/registryName"}'
+    azureContainerRegistry: '{"loginServer":"demo11acr1907.azurecr.io", "id" : "/subscriptions/e205edf9-df4c-4aad-83c0-3bc0f2d466c7/resourceGroups/demo11-rg2/providers/Microsoft.ContainerRegistry/registries/demo11acr1907"}'
     dockerComposeFile: 'docker-compose.yml'
     dockerComposeFileArgs: 'DOCKER_BUILD_SOURCE='
     action: 'Build services'
@@ -61,7 +61,7 @@ steps:
   inputs:
     containerregistrytype: 'Azure Container Registry'
     azureSubscription: 'Azure-Cloud-Link'
-    azureContainerRegistry: '{"loginServer":"registryName.azurecr.io", "id" : "/subscriptions/xxxx/resourceGroups/day11-demo-rg/providers/Microsoft.ContainerRegistry/registries/registryName"}'
+    azureContainerRegistry: '{"loginServer":"demo11acr1907.azurecr.io", "id" : "/subscriptions/e205edf9-df4c-4aad-83c0-3bc0f2d466c7/resourceGroups/demo11-rg2/providers/Microsoft.ContainerRegistry/registries/demo11acr1907"}'
     dockerComposeFile: 'docker-compose.yml'
     dockerComposeFileArgs: 'DOCKER_BUILD_SOURCE='
     action: 'Push services'
@@ -72,7 +72,7 @@ steps:
   inputs:
     containerregistrytype: 'Azure Container Registry'
     azureSubscription: 'Azure-Cloud-Link'
-    azureContainerRegistry: '{"loginServer":"registryName.azurecr.io", "id" : "/subscriptions/xxxx/resourceGroups/day11-demo-rg/providers/Microsoft.ContainerRegistry/registries/registryName"}'
+    azureContainerRegistry: '{"loginServer":"demo11acr1907.azurecr.io", "id" : "/subscriptions/e205edf9-df4c-4aad-83c0-3bc0f2d466c7/resourceGroups/demo11-rg2/providers/Microsoft.ContainerRegistry/registries/demo11acr1907"}'
     dockerComposeFile: 'docker-compose.yml'
     dockerComposeFileArgs: 'DOCKER_BUILD_SOURCE='
     action: 'Lock services'
